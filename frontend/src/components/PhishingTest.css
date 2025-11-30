@@ -1,0 +1,150 @@
+.phishing-container {
+  min-height: 100vh;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.phishing-header {
+  width: 100%;
+  max-width: 350px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.instagram-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.phishing-content {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 1px;
+  width: 100%;
+  max-width: 350px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.phishing-step h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #262626;
+}
+.phishing-step p {
+  font-size: 14px;
+  color: #8e8e8e;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+.phishing-input {
+  width: 100%;
+  padding: 9px 8px 7px 8px;
+  font-size: 14px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #262626;
+  transition: border-color 0.2s;
+}
+.phishing-input:focus {
+  outline: none;
+  border-color: #8e8e8e;
+}
+.phishing-input::placeholder {
+  color: #8e8e8e;
+}
+.phishing-btn-primary {
+  width: 100%;
+  padding: 7px 16px;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+.phishing-btn-primary:hover:not(:disabled) {
+  background: #1877f2;
+}
+.phishing-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.phishing-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+.phishing-divider::before,
+.phishing-divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #dbdbdb;
+}
+.phishing-divider span {
+  padding: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+.phishing-btn-secondary {
+  width: 100%;
+  padding: 7px 16px;
+  background: transparent;
+  color: #0095f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.phishing-btn-secondary:hover {
+  color: #1877f2;
+}
+.phishing-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #0095f6;
+  font-size: 12px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+.phishing-link:hover {
+  color: #1877f2;
+}
+.error-text {
+  color: #ed4956;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+.phishing-footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
+  max-width: 350px;
+}
+@media (max-width: 450px) {
+  .phishing-content {
+    padding: 30px 20px;
+  }
+}

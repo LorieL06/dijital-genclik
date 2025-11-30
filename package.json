@@ -1,0 +1,28 @@
+{
+  "name": "account-security-manager",
+  "version": "1.0.0",
+  "description": "Güvenlik İzleme Sistemi",
+  "main": "account-security-server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "nodemon account-security-server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "node account-security-server.js",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install"
+  },
+  "keywords": ["cybersecurity", "account-management", "hackathon"],
+  "author": "",
+  "license": "GNU Affero General Public License v3.0",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.0"
+  }
+}

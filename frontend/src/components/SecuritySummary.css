@@ -1,0 +1,117 @@
+.security-summary {
+  margin-bottom: 24px;
+}
+.security-summary h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.15s;
+}
+.summary-card:hover {
+  border-color: var(--accent);
+}
+.summary-card.danger {
+  border-color: var(--danger);
+}
+.summary-card.warning {
+  border-color: var(--warning);
+}
+.summary-icon {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--accent);
+}
+.summary-content {
+  flex: 1;
+}
+.summary-content h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.summary-score {
+  font-size: 28px;
+  font-weight: 600;
+}
+.score-success {
+  color: var(--success);
+}
+.score-info {
+  color: var(--accent);
+}
+.score-warning {
+  color: var(--warning);
+}
+.score-danger {
+  color: var(--danger);
+}
+.summary-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.accounts-by-type {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 24px;
+}
+.accounts-by-type h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+.type-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.type-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+.type-icon {
+  font-size: 20px;
+  color: var(--accent);
+}
+.type-name {
+  flex: 1;
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+.type-count {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+}
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

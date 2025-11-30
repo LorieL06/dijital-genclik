@@ -1,0 +1,22 @@
+/* App-wide styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App > *:not(nav) {
+  flex: 1;
+}
+
+/* Navigation Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
